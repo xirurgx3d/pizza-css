@@ -1,2 +1,68 @@
+.nav__header--mobil
+    ul.nav__list.nav
+        li.nav__item
+            a.nav__link.nav__link--active Главная
 .header 
     .container
+        .wrapper
+            .header__left
+                a.header__link
+                    img.header__logo--image(src=require('images/chilipizza_logo.png').default)
+            .header__center
+                .header__center__top
+                    a.about_sckool Школа поварят
+                    .time
+                        img.header__icon(src=require('images/icons/clock.png').default)
+                        .time__text 
+                            span Режим работы 
+                            br
+                            p с 10:00 до 22:30 без выходных
+                    .time
+                        img.header__icon(src=require('images/icons/telephone.png').default)
+                        .time__text 
+                            section 
+                                span +7 (978) 
+                                p  016-11-61    
+                            section 
+                                span +7 (978) 
+                                p  022-32-23 
+                    .socials
+                        a(href="")
+                            svg(xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='10' viewBox='0 0 16 10')
+                                image#fa-vk(width='16' height='10' xlink:href='data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAA20lEQVQokWWRYRXCMAyEP6gCLGwSagELIAEkbBJAAkhgEpiFWpgFFPQ93pWEF8b9aXtJLpd0UwsX4AAswDFlXrUwACc+mFPmrFstdMAN2jmlzLgFshH7UFSMc94x2LtzQgJTSDjYubCCdff4C7g2gZS5h4Jcy9fFGhp1Z9yoUd0BrmaIicKuFp6h+2RNvyNgxOwF0AoI77iHH7gDQZtutlYOWte4p1p4/DgwF+0bg4hjSbnxMSYR/QibtSXbtvYg23Iigd5i4tRdvMT6P4EgpKSW6BsPDSS0pMz8BsI0QKq3AWXJAAAAAElFTkSuQmCC')
+
+                        a(href="")
+                            img(src=require('images/icons/fa-instagram.png').default)
+                        a(href="")
+                            img(src=require('images/icons/fa-facebook.png').default)        
+                .header__center__bottom
+                    nav.nav__header
+                        ul.nav__list.nav
+                            li.nav__item
+                                a.nav__link Главная
+                            li.nav__item.active
+                                a.nav__link Меню
+                            li.nav__item
+                                a.nav__link О нас
+                            li.nav__item
+                                a.nav__link.info Акции   
+                            li.nav__item
+                                a.nav__link Доставка   
+                            li.nav__item
+                                a.nav__link Контакты   
+                    .burger-menu
+                        .burger-menu__button  
+                            .q                           
+            .header__right
+                .header__right__top
+                    a.cart-block-header
+                        .cart
+                            img.cat_img(src=require('images/icons/shopping-cart.png').default)
+                            .cart__text
+                                .cart__text__price 
+                                    .cart__text__price--strong 2399 ₽
+                                    .cart__text__price--coutn 3 товара
+                .header__right__bottom 
+                    .nav__link Войти
+                    img.header__icon(src=require('images/icons/user.png').default)              
+                    

@@ -73,6 +73,22 @@ html(lang='en')
     // Global site tag (gtag.js) - Google Analytics
     script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-56237358-2')
     script.
+        var burgerButton = document.querySelector('.burger-menu'),     
+            blockBody = document.querySelector('.page'),     
+            burgerMenu = document.querySelector('.nav__header--mobil');  
+
+        burgerButton && burgerButton.addEventListener('click', function(event) {
+            event.stopPropagation();
+            if(burgerButton.classList.contains('active')) {
+                burgerButton.classList.remove('active');
+                burgerMenu.classList.remove('active');
+                blockBody.style.overflow = 'auto';
+            } else {
+                burgerButton.classList.add('active');
+                burgerMenu.classList.add('active');
+                blockBody.style.overflow = 'hidden';
+            }
+        });
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
