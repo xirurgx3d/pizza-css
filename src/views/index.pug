@@ -10,6 +10,120 @@ block manifestBrowserconfigFiles
 block content
 
 
-  //- Index page
-  section.page.home__page
-    h1.page__title # Index page
+  .container
+    section.inner__container
+      .inner__sidebar.inner__sidebar--full
+        ul.inner__sidebar-list
+          li 
+            a Европейская кухня
+          li 
+            a.inner__sidebar-link--has-children Европейская кухня
+            ul.inner__sidebar-list-children
+              li
+                a Первые блюда
+              li
+                a Первые блюда
+              li
+                a Первые блюда    
+      .inner__main
+          .inner__breadcrumbs
+            li.inner__breadcrumb--item.inner__breadcrumb--path-element
+              a.inner__breadcrumb Главная 
+            li.inner__breadcrumb--item.inner__breadcrumb--path-element  
+              a.inner__breadcrumb.inner__breadcrumb--current Главная
+          .inner__main-block.title-block
+            h2.inner__title.inner__title--main Итальянская кухня
+          .inner__category
+            .catalog__items
+              .catalog__item.catalog__item--inner  
+                .catalog__header
+                  .catalog__header__info
+                  a(href="") 
+                    img(src=require('images/pizza1.png').default).catalog__image
+                .catalog__about   
+                  .catalog__about__top
+                    h6.header__block--title
+                      a(href="").header__block-hits-link Пепперони
+                    .catalog__text
+                      p.catalog__text--italic сыр Моцарелла, сыр Пармезан, томатный соус, помидор, руккола 
+                  .catalog__footer 
+                    .catalog__footer__left
+                      .info
+                        .info_rezmer 20 см
+                        .info_rezmer.info_rezmer--active 30 см
+                        .info_rezmer 40 см
+                      .catalog__price
+                        .price_contaner
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-default 570 ₽
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-big.hidden 600 ₽
+                        button.btn.btn--nb.btn--transparent.catalog__btn.add_to_cart_button.add_to_cart-default(onclick="cartBestArt.processCart('add', '12', this)")
+                          | В корзину
+              .catalog__item.catalog__item--inner  
+                .catalog__header
+                  .catalog__header__info
+                  a(href="") 
+                    img(src=require('images/pizza1.png').default).catalog__image
+                .catalog__about   
+                  .catalog__about__top
+                    h6.header__block--title
+                      a(href="").header__block-hits-link Пепперони
+                    .catalog__text
+                      p.catalog__text--italic 550 г Соус Италика, соус Барбекю, моцарелла, карбонат, куриное филе, баварс...«Унаги» карбонат, куриное филе, баварс...«Унаги»
+                  .catalog__footer 
+                    .catalog__footer__left
+                      .info
+                        .info_rezmer 20 см
+                        .info_rezmer.info_rezmer--active 30 см
+                        .info_rezmer 40 см
+                      .catalog__price
+                        .price_contaner
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-default 570 ₽
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-big.hidden 600 ₽
+                        button.btn.btn--nb.btn--transparent.catalog__btn.add_to_cart_button.add_to_cart-default(onclick="cartBestArt.processCart('add', '12', this)")
+                          | В корзину      
+              .catalog__item.catalog__item--inner  
+                .catalog__header
+                  .catalog__header__info
+                  a(href="") 
+                    img(src=require('images/pizza1.png').default).catalog__image
+                .catalog__about   
+                  .catalog__about__top
+                    h6.header__block--title
+                      a(href="").header__block-hits-link Пепперони
+                    .catalog__text
+                      p.catalog__text--italic сыр Моцарелла, сыр Пармезан, томатный соус, помидор, руккола  
+                  .catalog__footer 
+                    .catalog__footer__left
+                      .info
+                        .info_rezmer 20 см
+                        .info_rezmer.info_rezmer--active 30 см
+                        .info_rezmer 40 см
+                      .catalog__price
+                        .price_contaner
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-default 570 ₽
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-big.hidden 600 ₽
+                        button.btn.btn--nb.btn--transparent.catalog__btn.add_to_cart_button.add_to_cart-default(onclick="cartBestArt.processCart('add', '12', this)")
+                          | В корзину               
+              .catalog__item.catalog__item--inner  
+                .catalog__header
+                  .catalog__header__info
+                  a(href="") 
+                    img(src=require('images/pizza1.png').default).catalog__image
+                .catalog__about   
+                  .catalog__about__top
+                    h6.header__block--title
+                      a(href="").header__block-hits-link Пепперони
+                    .catalog__text
+                      p.catalog__text--italic сыр Моцарелла, сыр Пармезан, томатный соус, помидор, руккола  
+                  .catalog__footer 
+                    .catalog__footer__left
+                      .info
+                        .info_rezmer 20 см
+                        .info_rezmer.info_rezmer--active 30 см
+                        .info_rezmer 40 см
+                      .catalog__price
+                        .price_contaner
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-default 570 ₽
+                          span.header__block--title.header__block--title-small.catalog__price--actual.amount.amount-big.hidden 600 ₽
+                        button.btn.btn--nb.btn--transparent.catalog__btn.add_to_cart_button.add_to_cart-default(onclick="cartBestArt.processCart('add', '12', this)")
+                          | В корзину      

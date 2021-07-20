@@ -1,0 +1,65 @@
+.inner__sidebar{
+    width: 355px;
+}
+.inner__sidebar-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.inner__sidebar-list > li{
+    background-color: #1d202f;
+    border-radius: 25px; 
+    margin-top: 15px;
+    position: relative; 
+}
+.inner__sidebar-list > li > a{
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: rgb(253, 205, 0);
+    line-height: 1.2;
+    text-align: left;
+    font-weight: 500;
+    &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        background: url('../images/icons/fa-angle-right.png') no-repeat;
+        top: 17px;
+        right: 25px;
+        width: 7px;
+        height: 10px;
+    }
+}
+.inner__sidebar-link--has-children{
+    &::after{
+        transform: rotate(90deg);
+    }
+}
+
+
+.inner__sidebar-list-children{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    li{
+        margin-top: 10px;
+        padding: 10px 0;
+        padding-left: 25%;
+        //transition: .3s ease;
+        transition:padding-left .2s, transform 2s;
+        a{
+            font-size: 16px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+        }
+        &:hover{
+            background-color: #15161e;
+            padding-left: 28%;
+        }
+    }
+}
