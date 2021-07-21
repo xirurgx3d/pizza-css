@@ -40,6 +40,8 @@ html(lang='en')
     link(rel='icon', type='image/png', sizes='16x16', href=require('images/favicons/favicon-16x16.png').default)
     link(rel='shortcut icon', href=require('images/favicons/favicon.ico').default)
 
+    
+
     //- Preload fonts
     link(type='font/woff', href=require('source/assets/fonts/Quicksand-Bold.woff').default, rel='preload', as='font', crossorigin)
     link(type='font/woff', href=require('source/assets/fonts/Quicksand-Medium.woff').default, rel='preload', as='font', crossorigin)
@@ -71,7 +73,7 @@ html(lang='en')
     block scripts
 
     
-    
+    script(href=require('scripts/swiper.min.js').default)
     script.
         
         
