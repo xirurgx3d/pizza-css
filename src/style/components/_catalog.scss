@@ -213,6 +213,18 @@
     margin-top: 20px;
 }
 
+
+.inner__category-menus .inner__category-block{
+    display:block;
+    width:22%;
+    border-radius: 50%;
+    border: 1px solid #b5a16a;
+    position: relative;
+}
+.inner__category-menus .inner__category-image{
+    width: 100%;
+}
+
 @media screen and(max-width: 1460px) {
     .inner__sidebar{
         width: 20%;
