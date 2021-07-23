@@ -1,1 +1,239 @@
 // tovar
+.inner__item{
+    margin-top: 30px;
+
+.inner--df {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.inner__item-image {
+    width: 49%;
+    height: auto;
+    max-height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    color: #333;
+    border-radius: 25px;
+}
+.inner__item-info{
+    width: 48%;
+    padding-right: 3%;
+}
+.inner__item-title {
+    color: $org;
+    font-weight: 900;
+    font-size: 11px;
+    margin-bottom: 15px;
+}
+.inner__item-text{
+    color: #929292;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+// чекбокс
+.catalog__text--diameter{
+    display: block;
+    font-weight: 900;
+    font-size: 11px;
+    margin-bottom: 15px;
+    color: $org;
+}
+.inner__diameter--block{
+    display: flex;
+}
+.input__radio{
+    margin-right: 10px;
+}
+.input__radio--true{
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .input__radio--true+label {
+    display: block;
+    width: 70px;
+    height: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 25px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid $org;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .input__radio--true+label::before {
+    content: '';
+    position: absolute;
+    
+  }
+  
+  
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .input__radio--true:focus:not(:checked)+label {
+    border-color: $org;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .input__radio--true:checked+label {
+    background-color: $org;
+    color: #010101;
+  }
+  // цена и копка
+.inner__item--footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #1d202f;
+}
+.inner__item-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.inner__item-info .catalog__price--actual{
+    font-weight: 500;
+    font-size: 30px;
+    color: #fff;
+}
+.catalog__btn_big{
+    background-color: #00ff01;
+    width: 220px;
+    height: 60px;
+    padding-right: 10px;
+    line-height: 30px;
+    color: #000;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    border-radius: 25px;
+    position: relative;
+    &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left:40px;
+        top: 15px;
+        background: url('../images/icons/shopping-cart2.png') no-repeat;
+        transition: .3s ease;
+    }
+}
+.catalog__btn_big:hover{
+    &::after{
+       transform: rotate(-30deg)
+    }
+}
+
+// топинги
+.inner__navigation--toppings {
+    display: inline-block;
+    width: calc(50% - 10px);
+    border-bottom: none;
+}
+.inner__navigation-item {
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-right: 17px;
+    margin: 0px 20px;
+        margin-left: 20px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.inner__item.inner__navigation-item::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    width: 7px;
+    height: 11px;
+    background: url('../images/icons/angle-right.png') no-repeat; 
+    right: 0;
+    top: 15px;
+    transition: .3s ease;
+}
+.inner__item.inner__navigation-item.active::before {
+    &::before{
+        background: url('../images/icons/fa-angle-right.png') no-repeat; 
+        transform: rotate(180deg);
+    }
+}
+
+.inner__navigation--toppings-a {
+    position: absolute;
+    right: 60px;
+}
+.inner__navigation--toppings {
+    display: inline-block;
+    width: calc(50% - 10px);
+    border-bottom: none;
+}
+.inner__category-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-height: 175px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.inner__category-item {
+    display: flex;
+    align-items: center;
+}
+.inner__category-item {
+    margin: 15px auto 15px 0;
+    display: inline-block;
+    width: 375px;
+    font-size: 14px;
+    position: relative;
+}
+.checkbox-wrap {
+    font-size: 14px;
+    position: relative;
+}
+@media screen and(max-width: 1080px) {
+    .inner--df {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner__item-image{
+        margin-bottom: 20px;
+    }
+    .inner__item-info{
+        width: 100%;
+    }
+}
+}
