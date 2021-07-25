@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav__header--mobil">
+        <ul class="nav__list nav">
+            <li class="nav__item"><a class="nav__link nav__link--active">Главная</a></li>
+        </ul>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="wrapper">
+                <div class="header__left">
+                    <a class="header__link"><img class="header__logo--image"
+                            src="/assets/images/chilipizza_logo.cc7bcd7.png"></a>
+                </div>
+                <div class="header__center">
+                    <div class="header__center__top"><a class="about_sckool">Школа поварят</a>
+                        <div class="time"><img class="header__icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAC3klEQVRIib2XW4hNURjHf2ebGGZEzMSQKBTy4G3GjImiTJTEDA9TLo1IKQ8Kj/IilCSihsjlwaWmIXdJDuNWPLk8uIUilJiLye3o039p2805e+1z8H/59l57r++/vvXd1kpl7uKDAJgBzARqgQlAieZ9Bh4BaeA8cAn4EqczjrgYWA2sBQZFvrVL9o+MdwJbgG1ARz7Ec4B9QJneLwPHgOvAMxEY+gEjgWqgHqjT+EdgBXA0CfFmWWk4AmwC7mdd4p8YA6wHmjS6C1jlQ7wfWAJ8B+YDrZ6EUdRph8wVJ4CG8Pcg8vNWkb4HxsWQLgQae9DhcE46XsgFu7NZbFF7EfgGjAWex1iUkewTE8XlwBNZ3iDrfxMHCoZSpcyFGFKURhb1vYGvMf9WAjflPuPodtu0RgOtnqRIiS9uAYeBXsAGZ3EK6NLqhwGvPZV1qIj4WIy2+pOei83iaSJtS0CaD6zgnNa8WUY8Vy/N/5DUYa/kPGex4dp/IG6TrDUfm3+KEvjKwUV1KiH5L75ApO0JSREpitQkeEeOquMDl3ZJXZRxxD8U6kUJFcxWUaiS9EWZI36oCSMSEltpnaziUOlp+WDF0isjvqLBmoTEDlXq0TWSudxXLZm2n07qZVmexIYp2m5T/BioyPLfUskWSyeLym75uFwtMV9YRxsKjALeRHT0VWk2lAQq9hs1sKMAUsNE+TFKatge4uhybdHlsuXmVOBqgQuIYhJwT2PWBTtdIFiELtDzGWDIXyQt1QHDsNgdEsMReArYo1Z3J0eAJMFA4LZy9xBw0M2Nhv5K4Lhy2vJ7egGkFukPgPHAWWBR+GNPOWdbvhMYoFtBs87NvqhQAKX1fMD6b3RurgN9o/qnawYtOq7eAF6q1KLuNFyFpF6nT1STl4d6sDexwa4tdh5bF+lCRmpdxpSb/6J13q4vdil4m02x76XNnT6tMVh1Gh0is0U8VZM3X9rF7UNObcBPaA+qa/bWMCAAAAAASUVORK5CYII=">
+                            <div class="time__text"> <span>Режим работы </span>
+                                <br>
+                                <p>с 10:00 до 22:30 без выходных</p>
+                            </div>
+                        </div>
+                        <div class="time"><img class="header__icon"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADZ0lEQVRIiaXXe8ifYxgH8M/7bpE/WA3ZhtScYmYIQ045DqO2JuflNDRyqBlJijnUKzKHzWEoIs0hMpJTkWJOc4iEFZo5/GFEyhY/XboePT2e5/e8v8e33u7fez/XfX/v+zrfQ733jQZjcAxOxOHYurLme7yKx/E81rft2Ua8Ca7C1aW57/Ah1qKHSZiKbUoyN2MRfu1CPAtP5e/3MIIV+L3PIWfgcuyfc6fh0UGIb8MlWI0z8Ubj8eqxLx7ErrgP51WlhmuWPZKkS7BDB9LA25iSKp+HZ9qIF+PUtOmFpflx2L7DARbiUpyAZU3EM3Ex7sENpfmj8TO+xL0dyBenf5yTNv8HZRuHh67BtqVFx6VDvZPhcgWeyLAaFJ9jR2yEDcWNb8zx2NJm2yXpF+ksV2IB5jR5aguOys93lm8ct/0Mu5TWjmRojMe60vwZeAjzsXRA8rcwPW49XDrJgorQ5jmuq8y/nuPkDre+LMdZQXxW/vNcRaiw/pTS3AH4Kv8WdSB+M8d5oerw2D+wVUVoYqbFJaXQ6uU41IG0QDjZ5OGM0ZU1ApGTP0pbFngxx3H/gzjsPKbw6jUNQnNzvCPHiPU/8U1WrC6IC/2bQHoNG0QVehoXYVrEX9p5M3yCsRX583FKy2F6ZeJJfQTnZH1dmbaNPHw8dsYP6QvSLHdnjC/rs9/Egvi3jK0mhGoPxMZ4N2UisRySMb426+7UbBLmZ3psIt8v9gziF0qnbkKkzJOxV958bMZzONmzqb4ZmVaXZpEJ8rsq+wXfTlgV4TQzFx+Jl1sOcDoexk84LH2gCbdmwog88GnKhKmuwUtBPJzqjE32aCGW6iwOeH1uVOecT+Ig7Ilvqx+D9K8sXdOy8LfhlUynK1Klsf66UoYL9b+G2Sn7H1KlIjGUG6weJXmBI3AT9q75Fj5wMA7Ng9QSB07CY9muLByAPLBbltTp6eEjadf1acJ9+hEHHsiiET3X7QOS1+HHjIDx1W/VzHN22i9sPiF76q6IDnNL3FK3vqm9jZb03MxGc1vCpg6h+o9T7RPqevG69la2pKHy3fFBxF02DG3lMDz7/iTdkLatfQC0PWFC7ddWWt1wmtBE8YTZIvN2kBQVK5z0AvzStPFoH22bZm8clSeSQlSnMuJ2q7IDXY6v++6GvwFQpdDZKaZDwgAAAABJRU5ErkJggg==">
+                            <div class="time__text">
+                                <section> <span>+7 (978) </span>
+                                    <p> 016-11-61 </p>
+                                </section>
+                                <section> <span>+7 (978) </span>
+                                    <p> 022-32-23 </p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="socials">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="16" height="10" viewBox="0 0 16 10">
+                                    <image id="fa-vk" width="16" height="10"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAA20lEQVQokWWRYRXCMAyEP6gCLGwSagELIAEkbBJAAkhgEpiFWpgFFPQ93pWEF8b9aXtJLpd0UwsX4AAswDFlXrUwACc+mFPmrFstdMAN2jmlzLgFshH7UFSMc94x2LtzQgJTSDjYubCCdff4C7g2gZS5h4Jcy9fFGhp1Z9yoUd0BrmaIicKuFp6h+2RNvyNgxOwF0AoI77iHH7gDQZtutlYOWte4p1p4/DgwF+0bg4hjSbnxMSYR/QibtSXbtvYg23Iigd5i4tRdvMT6P4EgpKSW6BsPDSS0pMz8BsI0QKq3AWXJAAAAAElFTkSuQmCC">
+                                    </image>
+                                </svg>
+                            </a>
+                            <a href=""><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA5klEQVQokX1SgRGCMBBLORZwBdmgrAAjyAisoCPoCo4gI8gI0hEcQUaolzdwUMW/6x30P598vg6KGLAHUGE7ns6jZ9ZAMeAI2Bn/gNi0cx6NMcSAl4A/IwaUMaCd6pyKW+dRLKQeAJSUxO4AHvrmKXPRYgG4aTZK3Un2CcCg+ypTbS9Aq0Qj5kLgynljsciSGShpmF3yBuhSV1PQmMrV/8rVfMHAuNIUzUU2zkRTONMXE5OUQ921up/ZAMDFeWs215m98j918VOwvrtTxfQiuAcWsePWq5h2V08zUZIteQPAMOnOY3gDplFUa5pT0ccAAAAASUVORK5CYII="></a>
+                            <a href=""><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAkElEQVQokb2Q0Q2DMAxEXxALZIWyAcwCI7QzwQh0hczABrACI1AlMtVhIfWv95PIPtvPDtzoWOiBaJl0MR0LD2AGOgm/KtdndIaiWrpEMezAAGyhZaulIArHHlrSmaiEJUpBiVmcYJ/1bktT48G9vkwZcrLkU8Df2VTGuRudY3OH5gL+S3826cXzRmUbeQH4AOSBJCTN9pKPAAAAAElFTkSuQmCC"></a>
+                        </div>
+                    </div>
+                    <div class="header__center__bottom">
+                        <nav class="nav__header">
+                            <ul class="nav__list nav">
+                                <li class="nav__item"><a class="nav__link">Главная</a></li>
+                                <li class="nav__item active"><a class="nav__link">Меню</a></li>
+                                <li class="nav__item"><a class="nav__link">О нас</a></li>
+                                <li class="nav__item"><a class="nav__link info">Акции </a></li>
+                                <li class="nav__item"><a class="nav__link">Доставка </a></li>
+                                <li class="nav__item"><a class="nav__link">Контакты </a></li>
+                            </ul>
+                        </nav>
+                        <div class="burger-menu">
+                            <div class="burger-menu__button">
+                                <div class="q"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <div class="header__right__top">
+                        <a class="cart-block-header">
+                            <div class="cart"><img class="cat_img"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAACMklEQVRIic2WzUtUYRTGfzMjYySGWUZUjIIQlVYULUJsYZuIdkG0LBgXBoHQJvsDbJVBixZF0TJrJS5aSAvFwog25RB9IBX5AcP0hRVmH8aJ58JleO8dq/cOPnA49+u9z3Pee865J9W0qb0IpIA+4CbwlQSRBoaB9cA14AswAGxNitIiNN8A5IGzQJPudQATvgnT8h8V2QbgvK5t900WJgzjoY5fVotwnfxhYCewxidhjePaT/lzMpRMk7LnwBvgtaz0v4QZ+evAe2CvIt0vK8cv4CnwTJ/hhfwrYHY5hME2Xw19T0MtkANagGagFWiTmHaZC1MSUwBGXYRL8s1lhN+k3JVM1ji2SExggZgdEnfEys5F+C8wkW9l4471Vm53TYArS5OAtc8PRJRFUqitNiErjnDRM9f3SoQ/PBPWRxEGre0M0OiJ7ACw27pPXOEfBN55IgxwNK6X3tIkkCsT8jdIacee6D/7OI7wAvDIc4TOb5iVb/BNFkVYkO9OgtC1pWPACHAc2KV/XVZpPa/6rANWR7zT7n9SMGuBaeAy8IDQ1ObCJeC0x250yAKJe1kvMKjjE1Kb1/mgonTZKT1zRfORTQwLmn9XxUWISqEUmlUNn7WdUWJvACdVEgEG1EjaKm3XrFRu1PlmRTQVsyYYqo6FrnXJFysR9kjpHHBPCWCIy+CLSpzbwH1gBtijui5l6urt7x8Jm8Bs+uoEtiliI7sTs8a2fAjYpynPsrv/z8gJ/AbbUG41hRaepQAAAABJRU5ErkJggg==">
+                                <div class="cart__text">
+                                    <div class="cart__text__price">
+                                        <div class="cart__text__price--strong">2399 ₽</div>
+                                        <div class="cart__text__price--coutn">3 товара</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="header__right__bottom">
+                        <div class="nav__link">Войти</div><img class="header__icon"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAADaUlEQVRIiZ2XaYhOYRTHf3OTfafsGSHbaJChoTChsZMsMdmzfGEKJR8YYykjQskHDFG2NNYSihpL+YBk5gOTkGVknVeRyTY6+l/drvvc9x3/enve7jn3/J/nOetNq7lHKvCAMcAMYCTQMfTOa+AqcAq4BHxLZjMZcX1gDbAh8OwdUAa8AmqA9kAG0DagUwRsBj7/D/EU4Iz+lwPbgPPAJ4d+E2AcsBoYqGezgeO1Id4BrAReAvN1jbXBUOAw0BXYBywNv1snwtgRYA5wEFjkIMvUqRoDL4BrQCIgvwV0A3YDK4A2ukEn8U6Rmn/WRRD20YYGRcgKgI2hZ/mKBfP5fmCxLwhe9Vjgoq5ofoThycBZ/TdDFxQ8PXQqu97TwHTgV+jdXdrEX58HiX8C73UtYQwDSoFHQI7SJ4xCYD3wDMiSrSCeAulAXeC7J0GhcnVChME04DLwBejpIPWveqaMl0TIc7XuDp7Y8vGJojCMBfLreLkiGYx0KtAQ+BrSvQsMsFPbKUfp4RqHwTxtLBVSw3Wt4eqGUtQwxQsEUtT1GJqaT1IkNTTQ+iNCVqp1sadortKpopBQQLRKkThL61OH3IIvx4hbAnccSumK6MeOYhOFZnrWziG/bbb8qH7uULL6Ww/YCrxJkfiA1v4O+Z+s8BxCH+Va81IkNfTWet8hrwkSd4hROqmi0S8FUmuRa3WqSofOn/ZpeZxQBLZ2KLYAPsrP3ZMQW+B0VrG44tAxO108TQxxEVulPtxNg4ELvUS6N4YUFalST03BMClGeZPW/BgdPw62xOhkay32VIdRx3HBT7chMTottLp8iwYMQ4mnFrZdDSDT8YI/ELyNMfpF6yqHvLNObINGtd8k0rSBylCE56qBd1LizwMqHIYtBopVcD5os+cC8goFp5XUaj+dLG2mKR2KVH2OKvA6qkNlx5CiaB0uXzfS0GDEzTUAGukSIyVi2Nun8aRKPtuscaY2TcK/wQL9EiI/FixEUVOmpc5EnXZsLQnDMLJZ6kojgrKokmlptUdfDg+Bwf9BmKGmb6SHwqQuYsNyYK4GOQuqG9pQ3Rgyu97RuqkyTRrLgIWRykk+YczP5qdg4bAgeqBh32C1t68qlw+LFRuPnemX6kebDe7md7s6Sxe/5/qwMfcmcEKRHBzu/wXwGxn0yW9fOJOIAAAAAElFTkSuQmCC">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="inner__container page__mobile inner__container--column page__tablet--m">
+
+            <div class="inner--full">
+                <div class="inner__main-block  page__tablet--m">
+                    <h2 class="inner__title inner__title--main">Мой заказ</h2>
+                </div>
+                <div class="inner--full inner__table">
+                    <div class="inner__table__header">
+                        <div class="inner__table__img"></div>
+                        <div class="inner__table__product">Товар</div>
+                        <div class="inner__table__price">Цена за единицу</div>
+                        <div class="inner__table__count">Кол-во</div>
+                        <div class="inner__table__sum">Сумма</div>
+                    </div>
+                    <div class=" inner__table__row inner__table-block order-page-row" id="order-product-0">
+                        <div class="inner__table__img">
+                            <button class="btn btn--transparent btn_remove"
+                                onclick="cartBestArt.removeFromCart(0,this)"></button>
+                            <img src="https://chill.toredo.ru/upload/product/350x250/0/3/03910c870f3ea8e224e752b115b3a8b4.png" class="image">
+                        </div>
+                        <div class="inner__table__product">
+                            <span class="inner__table__product__name">Груша &amp; горгонзола (30 см)</span>
+                            <div class="inner__table__product__info">38x20 см / 450 гр (статика)</div>
+                        </div>
+                        <div class="inner__table__price"><span>550 руб.</span></div>
+                        <div class="inner__table__count">
+                            <div class="inner__table-item__count">
+                                <button class="btn btn_transperent"
+                                    onclick="cartBestArt.updateCart('reduce',0,this)"><img src="../images/icons/minus.png"
+                                        alt="minus"></button>
+                                <div class="inner__table-item--counter">
+                                    <span class="inner__table-item--counter-item order-page-row-count-value">1</span>
+
+                                </div>
+                                <button class="btn btn_transperent"
+                                    onclick="cartBestArt.updateCart('increase',0,this)"><img src="../images/icons/plus.png"
+                                        alt="plus"></button>
+                            </div>
+                        </div>
+                        <div
+                            class="order-page-row-total-new inner__table-item--block inner--mobile inner--mobile-right kosko inner__table__sum">
+                            <span>550</span> руб.
+                        </div>
+                        <input type="hidden" name="product-price" value="550">
+                    </div>
+                    <div class="inner__table__bottom">
+                        <div class="inner__table__button">
+                            <a href="javascript:history.go(-1)" class="btn btn--transparent btn--back kosko"><i
+                                    class="fa fa-hand-o-left"></i> Вернуться назад</a>
+                            <a href="/cart/clear" class="btn btn--transparent btn--clear kosko"><i
+                                    class="fa fa-times"></i> Очистить заказ</a>
+                        </div>
+                        <div class="inner__table__bottom_ta">
+                            <div class="inner__table__bottom__right">
+                                <span class="inner__table-item--header">Сумма вашего заказа:</span>
+                                <span class="inner__table-item--final order-page-footer-total kosko"><span>550</span>
+                                    руб.</span>
+                            </div>
+                            <a href="/cart/checkout" class="btn button_red kosko ">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer class="footer__container">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__item footer__item_first">
+                    <a href=""> <img class="footer__logo--image" src="/assets/images/footer_logo.15e4fe3.png"
+                            alt=""></a>
+                    <div class="footer__copy">
+                        <div class="footer__text foote-text-pizz">© 2021 Chili Pizza</div>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__title">Сайт</p>
+                    <nav class="footer__nav"><a class="footer__nav--item footer__link">Главная</a><a
+                            class="footer__nav--item footer__link">Меню</a><a class="footer__nav--item footer__link">О
+                            нас</a><a class="footer__nav--item footer__link">Акции</a><a
+                            class="footer__nav--item footer__link">Доставка</a><a
+                            class="footer__nav--item footer__link">Контакты</a></nav>
+                </div>
+                <div class="footer_box">
+                    <div class="footer__item">
+                        <p class="footer__title">Информация</p>
+                        <nav class="footer__nav"><a class="footer__nav--item footer__link">Школа поварят</a><a
+                                class="footer__nav--item footer__link">Оформление заказа</a><a
+                                class="footer__nav--item footer__link">Отзывы и предложенич</a></nav>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__title">Доставка</p>
+                        <nav class="footer__nav">
+                            <div class="footer__info">С 10:00 до 22:30</div>
+                            <div class="footer__info">Без выходных</div>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__title">Контакты</p><a class="footer__link footer__link--large">+7 (978)
+                            016-11-61 </a><a class="footer__link footer__link--large">+7 (978) 016-11-61 </a>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__title">Будьте с нами</p>
+                        <ul class="footer__socials">
+                            <li class="social">
+                                <a class="social__link"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAq0lEQVQokX2RYRXCMAyELxKwgAUszAIWZmEWZmEWZgEkYKFI6CQcLyOFI2/l3uuPfr1e0gYkZ5KF5I3kCYCzKZivBSGS5/A5nxFmB01TsEFYkYBF+CdgFPjAt9JPQLAarLZuW0iRC2MnYFUPVKkLT7+kvT5zxZGSqbKvboC+MUvb/9uF/34OaX9wTWf7xHqdeMVm1jFqgX0SdpjyNvuYfG1mtmkBAAOAp5ndX37clQ0gmOihAAAAAElFTkSuQmCC"></a>
+                            </li>
+                            <li class="social">
+                                <a class="social__link"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAA4UlEQVQokX2SgQ2CQBAEd40N2IKWQAtYgpZAC9qKlqAlSAlQApQgJaxZck8eAl5C+Pzf3u3NPxEh6QigxHb0JGufjiJJNwD+hj8iF32TvI4dJH1DuBqSCklVymMkVyRPmdULgMKWXB1AE+t+3Jf0kNRlgldU7LL/JRy5W7eL3DoEVcC4RudTzFmS7FPh3WIGW2onSuQQ9mZUl6IhKC2pzajusw6Op6F4rrB8AGAo91mZFRDG22QQpqvweswNMk6Y2ZLkLssGH7tIL8L34CTb23oV6e7OSWSBbfhgK4z8TrL9Ad0LrM22cJCwAAAAAElFTkSuQmCC"></a>
+                            </li>
+                            <li class="social">
+                                <a class="social__link"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAgElEQVQokb2PUQ2AMAxEbwQDszALWMACFuYJLGABCVhgEkDCkSZr2JYmhB/eT5Pd7dpzMCA5AfBZ2SoHyUByZ03smpwZwGCla4oneeYMmaMkW6uUo9Q6NRSHlp+ClWAR2sNbknMu9QAuAEsWY57ytorp2+Fv/GySdoo00jZPKwA33M+CxRMuhw8AAAAASUVORK5CYII="></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__title">Адрес</p>
+                        <nav class="footer__nav">
+                            <div class="footer__info">г. Симферополь,</div>
+                            <div class="footer__info">ул.Ковыльная, д.94, ТЦ Жемчужный</div>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__title">Создано в студии</p>
+                        <a class="footer__link footer__link--large" href=""><img
+                                src="/assets/images/stud.145266f.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>
