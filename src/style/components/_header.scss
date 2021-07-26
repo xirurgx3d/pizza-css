@@ -115,9 +115,9 @@
     justify-content: space-around;
     width: 95%;
     .nav__item{
-        padding: 0 4%;
-        transition: .3s ease;
+        
     }
+    
     .nav__link.info{
         position: relative;
         &::after{
@@ -135,18 +135,19 @@
       font-size: 16px;  
       font-weight: 400;
       cursor: pointer;
+      color: #fff;
       transition: .3s ease;
+      padding: 0 20px;
       &:hover{
           color: $org;
+          background: none;
       }  
     }
-    .active{
+    .nav__link--active{
         border-bottom: 5px solid $org;
         padding-bottom: 15px;
-        .nav__link{
         font-family: 600;
         color: $org;
-        }
     }
     
 }
@@ -215,7 +216,7 @@
     overflow: hidden;
     z-index: 9000;
     cursor: pointer;
-
+    
     &__button {
         position: absolute;
         width: 16px;
@@ -276,7 +277,10 @@
     background-color: $blk;
     z-index: 9999;
     transition: all 0.3s;
-
+    .nav__header__login{
+        margin-left: 30px;
+        margin-top: 15px;
+    }
     &.active {
         transform: translateX(0%);
     }
@@ -299,12 +303,17 @@
                 font-size: 18px;
                 -webkit-transform: translateY(0);
                 transform: translateY(0%);
-
+                color: #fff;
                 &:hover {
-                    color: #fff;
+                    color: $org;
+                    background: none;
                 }
             }
+            a.nav__link--active{
+                color: $org;
+            }
         }
+        
     }
 }
 
@@ -331,7 +340,7 @@
     .header__center__bottom .nav__list{
         width: 100%;
     }
-    .header__center__bottom .nav__list .nav__item{
+    .header__center__bottom .nav__list .nav__link{
         padding: 0;
         padding-bottom: 10px;
     }

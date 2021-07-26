@@ -16,6 +16,7 @@
 /*
   Components 
 */
+//@import './components/inner_container';
 @import './components/header';
 @import './components/slidebar';
 @import './components/catalog';
@@ -40,4 +41,3 @@
 @import './pages/tovar';
 @import './pages/cart';
 @import './pages/order';
-@import './components/inner_container';

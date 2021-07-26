@@ -179,8 +179,13 @@
     &__button {
         display: flex;
         padding-left: 10px;
-
-        .fa-hand-o-left{
+        .btn--back,.btn--clear{
+            position: relative;
+            display: inline-block;
+            .fa{display: none;}
+        }
+        .btn--back::before{
+            content: "";
             display: inline-block;
             background: url('../images/icons/fa-hand-o-left.png') no-repeat;
             width: 15px;
@@ -190,7 +195,8 @@
             top: 3px;
             cursor: pointer;
         }
-        .fa-times{
+        .btn--clear::before{
+            content: "";
             display: inline-block;
             background: url('../images/icons/fa-close.png') no-repeat;
             width: 15px;

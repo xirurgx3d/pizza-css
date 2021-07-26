@@ -11,6 +11,17 @@
     align-items: flex-start;
     justify-content: space-between;
 }
+.inner__title--tovara{
+    display: inline-block;
+    font-size: 30px;
+    color: #fdcd00;
+    font-weight: 900;
+    line-height: 1.2;
+    position: relative;
+    background: #2b2d33;
+    bottom: -7px;
+    padding-right: 15px;
+}
 .inner__item-image {
     width: 49%;
     height: auto;
@@ -47,6 +58,7 @@
     display: flex;
 }
 .input__radio{
+    margin: 0;
     margin-right: 10px;
 }
 .input__radio--true{
@@ -223,6 +235,14 @@
     font-size: 14px;
     position: relative;
 }
+.inner__navigation--mobile{
+    display: none;
+}
+.inner__item--weight{
+    margin-bottom: 15px;
+}
+
+
 @media screen and(max-width: 1080px) {
     .inner--df {
         flex-direction: column;
@@ -236,4 +256,21 @@
         width: 100%;
     }
 }
+}
+@media screen and(max-width: 812px) {
+    .inner__item-mobil,.inner__item-info{
+        display: block;
+    }
+}
+@media screen and(max-width: 580px) {
+    .inner__item .inner__navigation--mobile{
+        display: block;
+    }
+    .inner__navigation--tablet{
+        display: none;
+    }
+    .inner__navigation{
+        max-height: 100px !important;
+        padding-bottom: 25px;
+    }
 }
