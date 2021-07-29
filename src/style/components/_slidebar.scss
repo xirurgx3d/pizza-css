@@ -13,9 +13,8 @@
     margin-top: 15px;
     position: relative; 
 }
-.inner__sidebar-list > li > a{
+.inner__sidebar-link-cat{
     display: block;
-    width: 100%;
     padding: 15px 30px;
     font-size: 15px;
     font-family: "Montserrat";
@@ -23,17 +22,24 @@
     line-height: 1.2;
     text-align: left;
     font-weight: 500;
-    &::after{
-        display: block;
-        content: "";
-        position: absolute;
-        background: url('../images/icons/fa-angle-right.png') no-repeat;
-        top: 17px !important;
-        right: 25px !important;
-        width: 7px !important;
-        height: 10px !important;
-    }
 }
+.inner__sidebar_box-links-arrow{
+    display: none;
+        background: url('../images/icons/fa-angle-right.png') no-repeat;
+        margin: 0 20px;
+        width: 7px;
+        height: 10px;
+        cursor: pointer;
+        transition: .3s ease;
+}
+.arrow-active .inner__sidebar_box-links-arrow{
+    transform: rotate(90deg);
+}
+
+.inner__sidebar-link-cat.inner__sidebar-link--has-children + div{
+    display: block;
+}
+
 .inner__sidebar-link--has-children{
     &::after{
         transform: rotate(90deg);
