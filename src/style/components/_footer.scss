@@ -145,6 +145,14 @@
   border: 1px solid #615421;
 }
 
+.footer__socials .social__link{
+  color:#fff;
+}
+.footer__socials .social__link:hover{
+  color:#000;
+  background:#fff;
+}
+
 
 @media screen and(max-width: 1080px) {
   .footer_box .footer__item{
