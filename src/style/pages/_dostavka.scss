@@ -1,0 +1,157 @@
+.dostavka {
+    margin-bottom: 30px;
+}
+
+.dostavka_box--two {
+    display: flex;
+
+    section {
+        width: 50%;
+        padding-right: 5%;
+    }
+
+    p {
+        color: #fff;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+}
+
+.dostavka_map {
+    margin-top: 30px;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.dostavka_grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.dostavka_grid_item {
+    display: flex;
+    width: 23%;
+}
+
+.dostavka_item-img {
+    margin-right: 15px;
+    width: 40px;
+    height: 25px;
+}
+
+.dostavka_item-text {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.dostavka_item-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.dostavka-green {
+    color: #a0d98f;
+}
+
+.dostavka-blue {
+    color: #76bdf8;
+}
+
+.dostavka-ping {
+    color: #f49483;
+}
+
+.dostavka-org {
+    color: #ffda8d;
+}
+
+
+.oplata_grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.oplata_grid-item {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.oplata_item-img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #786820;
+    border-radius: 50%;
+}
+.oplata_item-text{
+    color: #fdcd00;
+    font-size: 16px;
+    font-family: 500;
+    margin-top: 30px;
+    text-align: center;
+}
+.oplata_grid-elips{
+    width: 18px;
+    height: 18px;
+}
+
+.paypal{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .paypal-title{
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        text-align: center;
+    }
+}
+.paypal_grid{
+    display: flex;
+    justify-content: center;
+    img{
+        margin: 0 10px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:960px) {
+    .dostavka_grid,.oplata_grid{
+        flex-wrap: wrap;
+    }
+    .dostavka_grid_item,.oplata_grid-item {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+    .oplata_grid-elips{
+        display: none;
+    }
+}
+@media screen and (max-width:560px) {
+   
+    .dostavka_grid_item,.oplata_grid-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .dostavka_box--two{
+        flex-wrap: wrap;
+        section{
+            width: 100%;
+        }
+    }
+    
+    
+}
