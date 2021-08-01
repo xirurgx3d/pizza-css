@@ -208,6 +208,34 @@ $green: #fff;
   margin-left: -15px;
 }
 
+//contact
+.contact_box{
+  margin-top: 30px;
+}
+.contact_grid{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact_grid-item{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  .contact-item-img{
+    margin-right: 10px;
+  }
+  .contact-item-text-title{
+    color: #fdcd00;
+  }
+  span{
+    display: block;
+  }
+}
+.yandex_map{
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
 
 @media screen and (max-width: 1100px) {
   .inner__navigation-item {
@@ -276,6 +304,15 @@ $green: #fff;
 }
 
 @media screen and (max-width: 667px) {
+  .contact_grid{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_grid-item{
+    width: 100%;
+    margin-bottom: 25px;
+  }
   .swiper__main--block {
       border-radius: 5px;
   }

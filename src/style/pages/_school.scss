@@ -1,0 +1,70 @@
+.povorata{
+    margin-top: 30px;
+}
+.povart_grid{
+    margin-top: 30px;
+    display: flex;
+}
+.povorata_promo img{
+    width: 100%;
+}
+
+.povart_info{
+    width: 60%;
+    p{
+        margin-top: 10px;
+        line-height: 20px;
+    }
+}
+.povart_slide{
+    width: 40%;
+}
+.povart_about{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.povart_about-box{
+    text-align: center;
+    .povart_about-def{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .povart_about-str{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        color: #fdcd00;
+    }
+    .povart_about-slope{
+        display: block;
+        color: #fdcd00;
+        margin: 15px 0;
+    }
+}
+.povart_button{
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    background-color: #fdcd00;
+    color: #000000;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 30px;
+    border:none;
+    transition: all 0.3s;
+    &:hover{
+        background-color: #fdbe00;
+    }
+}
+@media screen and (max-width: 667px) {
+    .povart_grid{
+        flex-wrap: wrap;
+    }
+    .povart_info, .povart_slide{
+        width: 100%; 
+    }
+}
