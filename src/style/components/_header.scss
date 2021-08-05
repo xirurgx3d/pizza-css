@@ -100,7 +100,18 @@
         height: 30px;
         @include isFlex(center, center);
         border: 1px solid $br-or;
+        .fa{
+            color: #fdcd00;
+        }
+        &:hover{
+            background-color: #fdcd00;
+            border: none;
+            .fa{
+                color: #000;
+            }
+        }
     }
+    
 }
 // меню
 .nav__header{

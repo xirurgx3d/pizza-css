@@ -18,7 +18,7 @@
     padding: 15px 30px;
     font-size: 15px;
     font-family: "Montserrat";
-    color: rgb(253, 205, 0);
+    color: rgb(253, 205, 0) !important;
     line-height: 1.2;
     text-align: left;
     font-weight: 500;
@@ -35,8 +35,14 @@
 .arrow-active .inner__sidebar_box-links-arrow{
     transform: rotate(90deg);
 }
+.inner__sidebar-list-children{
+    display: none;
+}
 
 .inner__sidebar-link-cat.inner__sidebar-link--has-children + div{
+    display: block;
+}
+.arrow-active + .inner__sidebar-list-children{
     display: block;
 }
 
@@ -63,6 +69,9 @@
             font-family: "Montserrat";
             color: rgb(255, 255, 255);
             line-height: 1.2;
+        }
+        .inner__sidebar-link--active{
+            color:$org;
         }
         &:hover{
             background-color: #15161e;

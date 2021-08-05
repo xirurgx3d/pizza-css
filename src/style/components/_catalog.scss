@@ -108,17 +108,7 @@
                 border: none;
             }
 
-            .catalog__price {
-                &--actual, &--old {
-                    text-transform: initial;
-                }
-
-                &--old {
-                    font-size: 14px;
-                    text-decoration: line-through;
-                    
-                }
-            }
+            
         }
 
         
@@ -149,7 +139,7 @@
     font-weight: 900;
     margin-right: 15px;
 }
-.amount-big{
+.catalog__price--old{
     font-size: 14px;
     color: rgb(146, 146, 146);
     text-decoration: line-through;
