@@ -241,7 +241,12 @@
 .inner__item--weight{
     margin-bottom: 15px;
 }
-
+.cart .inner__item-info{
+    margin-bottom: 350px;   
+}
+.inner__navigation--mobile{
+    padding-bottom: 350px;   
+}
 
 @media screen and(max-width: 1080px) {
     .inner--df {
@@ -272,5 +277,14 @@
     .inner__navigation{
         max-height: 100px !important;
         padding-bottom: 25px;
+    }
+    .cart{
+        display: block;
+    }
+    .cart .inner__item-info{
+        margin-bottom: 0 !important;
+    }
+    .inner__navigation--mobile .inner__category-content{
+        padding-left: 20px;
     }
 }
