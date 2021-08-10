@@ -89,6 +89,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 100px;
+    min-height: 100px;
 }
 .about_pizza__item-content{
     margin-left: 20px;

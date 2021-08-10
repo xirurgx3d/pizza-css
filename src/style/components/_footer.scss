@@ -29,6 +29,10 @@
 .footer__item_first {
   padding-top: 50px;
   padding-left: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0 !important;
 }
 .footer__item {
   padding-top: 48px;
@@ -67,8 +71,9 @@
 }
 .footer__link {
   padding: 0;
-  margin-bottom: 6px;
+  margin-bottom: 6px; 
   font-size: 15px;
+  padding-right: 5px;
 }
 .footer__link {
   color: #fff;
@@ -104,6 +109,7 @@
   margin-bottom: 6px;
   font-size: 15px;
   font-weight: 200;
+  padding-right: 5px;
 }
 .footer__link--large {
   text-decoration: none;
