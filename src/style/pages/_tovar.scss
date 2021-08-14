@@ -63,9 +63,11 @@
 }
 .input__radio--true{
     position: absolute;
-    width: 50px;
+    width: 70px;
     height: 25px;
     opacity: 0;
+    margin: 0;
+
   }
   /* для элемента label связанного с .custom-radio */
   .input__radio--true+label {

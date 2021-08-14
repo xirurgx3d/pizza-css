@@ -438,7 +438,7 @@
     display: flex;
 }
 .imputs_dabl .making-order__form__item{
-    width: 50%;
+    width: 40%; 
 }
 .input__radio--true:checked + .input__radio--fake + .input__label{
     color: #fdcd00 !important;   
@@ -447,6 +447,7 @@
 .making-order__form__item .input__field{
     color: #000;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 .making-order__form__item .input__field .nice-select::after{
     border-bottom: 2px solid #000 !important;
