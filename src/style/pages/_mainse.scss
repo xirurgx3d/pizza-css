@@ -162,3 +162,21 @@
         width: 100%;
     }
 }
+@media screen and(max-width: 600px) {
+    .cat_page__item--img{
+        width: 200px;
+    }
+    .swiper__btn{
+        display: none !important;
+    }
+    .swiper-pagination-bullet{
+        width: 15px !important;
+        height: 15px !important;
+        bottom: 10px !important;
+    }
+}
+@media screen and(max-width: 460px) {
+    .cat_page__item--img{
+        width: 130px;
+    }
+}

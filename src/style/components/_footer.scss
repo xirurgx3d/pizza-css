@@ -183,3 +183,21 @@
     }
   }
 }
+@media screen and(max-width: 560px) {
+  .footer__content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__item{
+    width: 100%;
+    text-align: center;
+  }
+  .footer_box{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__socials{
+    justify-content: center;
+  }
+}
