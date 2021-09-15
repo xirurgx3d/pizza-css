@@ -175,7 +175,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 15px;
+    margin-left: 8px;
     }
     .cat_img{
         padding-right: 15px;
@@ -381,7 +381,7 @@
 
     .burger-menu{
         background-color: #1d202f;
-        margin-right: 20px;
+        margin-right: 15px; 
         &__button {
             position: absolute;
             width: 16px;
@@ -468,6 +468,7 @@
 @media screen and(max-width: 1320px) {
     .header{
         height: auto;
+        padding-bottom: 10px;
     }
     .about_sckool{
         display: none;

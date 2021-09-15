@@ -177,6 +177,16 @@
 }
 @media screen and(max-width: 460px) {
     .cat_page__item--img{
-        width: 130px;
+        width: 180px;
+    }
+}
+@media screen and(max-width: 380px) {
+    .cat_page__item--img{
+        width: 160px;
+    }
+}
+@media screen and(max-width: 320px) {
+    .cat_page__item--img{
+        width: 200px;
     }
 }

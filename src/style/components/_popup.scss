@@ -39,7 +39,7 @@
 .page__popup__caption{
     font-size: 14px;
      color: #000;
-     margin-bottom: 40px;
+     margin-bottom:10px;
 }
 
  
@@ -154,6 +154,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 25px;
     color: #000;
     font-size: 13px;
@@ -265,6 +266,8 @@
   @media screen and (max-width: 667px) {
     .page__popup {
       width: 75%;
+      padding-top: 55px;
+      padding-bottom: 20px;
     }
     .page__popup-item {
       margin: 0px 20px;
@@ -282,9 +285,16 @@
     }
   }
   @media screen and (max-width: 480px) {
+    .page__popup-wrapper--pos{
+      position: absolute;
+    }
     .page__popup {
+      position: absolute;
       width: 100%;
       border-radius: 0px;
+      padding-top: 55px;
+      padding-bottom: 20px;
+      transform: translate(-50%,-30%);
     }
     .page__popup-header--pos {
       padding: 20px 30px 0px 30px;
@@ -298,5 +308,8 @@
     .page__popup-input--pos {
       min-width: 100%;
       margin: 7px 0px;
+    }
+    .page__popup-footer{
+      flex-direction: column;
     }
   }

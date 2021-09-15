@@ -123,6 +123,7 @@
             .form-group {
                 margin-bottom: -3px;
                 vertical-align: top;
+                width: 100%;
             }
 
             .input__field {
@@ -306,6 +307,7 @@
     min-height: 35px;
     position: relative;
     margin-bottom: 20px;
+   
 }
 .timer__wrapper {
     min-width: 100px;
@@ -455,6 +457,10 @@
 }
 #order-payment_method{
     display: flex;
+}
+.street-solo{
+    min-width: 340px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1700px) {
@@ -613,5 +619,17 @@
     }
     .making-order__form__item .form-group{
         width: 100%;
+    }
+    .has-error{
+        margin-bottom: 40px !important;
+    }
+    .has-error > input[type="text"]{
+        margin-bottom: 5px !important;
+    }
+    .help-block-error{
+        position: relative !important;
+    }
+    .input__field--full,.street-solo {
+        min-width: 300px;
     }
 }
